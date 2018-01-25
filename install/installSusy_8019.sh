@@ -74,7 +74,7 @@ git remote add cmg-central git@github.com:CERN-PH-CMG/cmgtools-lite.git
 ### git remote add ecop git@github.com:ECOP/cmgtools-lite.git -f -t 80X_for2016basis
 git remote add ecop git@github.com:ECOP/cmgtools-lite.git
 
-git checkout -b ${LITEBRANCH} peruzzim/${LITEBRANCH}
+git checkout -b ${LITEBRANCH} ecop/${LITEBRANCH}
 
 # add your fork, and push the 80X branch to it
 git remote add origin  git@github.com:${UGIT}/cmgtools-lite.git 
