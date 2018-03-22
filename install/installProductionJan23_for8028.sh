@@ -1,6 +1,6 @@
 setenv SCRAM_ARCH slc6_amd64_gcc530
-cmsrel CMSSW_8_0_20
-cd CMSSW_8_0_20/src
+cmsrel CMSSW_8_0_28
+cd CMSSW_8_0_28/src
 cmsenv
 git cms-init
 
@@ -22,7 +22,3 @@ git checkout egm_id_80X_v1
 cd $CMSSW_BASE/src
 
 # python heppy_crab.py --cfg-file ../run_susyMultilepton_cfg.py --storage-site T2_CH_CERN --output-dir heppyTrees -v ProdMCJan23 -l ProdMCJan23 --option removeJecUncertainties --option analysis="susy" --option mcGroup=0
-<<<<<<< HEAD
-
-=======
->>>>>>> pietro/master
