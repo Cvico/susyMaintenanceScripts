@@ -8,7 +8,7 @@ scp vischia@lxplus.cern.ch:/afs/cern.ch/user/c/cmgtools/public/sparse-checkout_8
 git checkout -b heppy_94X_2018 matthieu/heppy_94X_2018
 git clone -o matthieu https://github.com/mmarionncern/cmgtools-lite.git -b 94X_dev_2018 CMGTools
 # This scram you can even stop it and kill it straight away. It is just to create the external/$SCRAM_ARCH directory
-scram b -j50
+scram b -j 4
 echo /RecoEgamma/EgammaTools/ >> .git/info/sparse-checkout
 git read-tree -mu HEAD
 git remote add cmssw-guitargeek https://github.com/guitargeek/cmssw.git -f -t ElectronID_MVA2017_940pre3
@@ -21,4 +21,4 @@ rm -r Spring15*
 rm -r Spring16*
 rm -r PHYS14/
 cd $CMSSW_BASE/src
-scram b  -j50
+scram b -j 4
