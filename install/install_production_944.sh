@@ -4,9 +4,9 @@ cd CMSSW_9_4_4/src/
 cmsenv
 git cms-init
 git remote add matthieu https://github.com/mmarionncern/cmg-cmssw.git -f -t heppy_94X_2018 
-scp vischia@lxplus.cern.ch:/afs/cern.ch/user/c/cmgtools/public/sparse-checkout_80X_heppy .git/info/sparse-checkout
+scp cericeci@lxplus.cern.ch:/afs/cern.ch/user/c/cmgtools/public/sparse-checkout_80X_heppy .git/info/sparse-checkout
 git checkout -b heppy_94X_2018 matthieu/heppy_94X_2018
-git clone -o matthieu https://github.com/mmarionncern/cmgtools-lite.git -b 94X_dev_2018 CMGTools
+git clone -o carlos https://github.com/cericeci/cmgtools-lite.git -b 94X_dev_2018 CMGTools
 # This scram you can even stop it and kill it straight away. It is just to create the external/$SCRAM_ARCH directory
 scram b -j 4
 echo /RecoEgamma/EgammaTools/ >> .git/info/sparse-checkout
